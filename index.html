@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vignesh Prabhuram | Business Analyst and Catalog Specialist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f6f8; --surface:#ffffff; --ink:#13203a; --muted:#56637a; --line:#d9dfe7;
+  --accent:#0b7a6b; --accent-soft:#d8f0ec; --flag:#fde7c7; --flag-ink:#8a4b00;
+  --head:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1626; --surface:#16213a; --ink:#e8edf6; --muted:#9aa8c0; --line:#2a3858;
+    --accent:#4fd1bd; --accent-soft:#12343a; --flag:#4a3412; --flag-ink:#ffd9a0; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1626; --surface:#16213a; --ink:#e8edf6; --muted:#9aa8c0; --line:#2a3858;
+  --accent:#4fd1bd; --accent-soft:#12343a; --flag:#4a3412; --flag-ink:#ffd9a0; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.65}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--head);line-height:1.12;margin:0}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:16px;flex-wrap:wrap}
+nav .logo{font-family:var(--head);font-weight:700;font-size:1.05rem;color:var(--ink);text-decoration:none}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;font-size:.95rem}
+nav ul a{color:var(--muted);text-decoration:none}
+nav ul a:hover{color:var(--accent)}
+.hero{padding:44px 0 64px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,6vw,3.7rem);font-weight:700;letter-spacing:-.02em}
+.hero p{color:var(--muted);max-width:34em;margin:20px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{font-family:var(--head);font-weight:500;padding:12px 20px;border-radius:8px;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--accent)}
+.sheet{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow-x:auto;font-size:.82rem;font-family:var(--head)}
+.sheet .cap{padding:10px 14px;color:var(--muted);border-bottom:1px solid var(--line);font-family:var(--body);font-size:.85rem}
+table{border-collapse:collapse;width:100%;min-width:360px}
+th,td{padding:9px 14px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-weight:500;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+td.flag{background:var(--flag);color:var(--flag-ink);font-weight:700}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:26px;letter-spacing:-.01em}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:36px}
+.about p{margin:0 0 16px}
+.facts{display:grid;gap:14px;align-content:start}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 18px}
+.fact b{font-family:var(--head);font-size:1.6rem;display:block;color:var(--accent)}
+.fact span{color:var(--muted);font-size:.92rem}
+.proj{display:grid;gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px}
+.card h3{font-size:1.3rem;margin-bottom:8px}
+.card p{margin:0 0 14px;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;padding:0;list-style:none}
+.tags li{font-family:var(--head);font-size:.82rem;background:var(--accent-soft);color:var(--accent);padding:4px 11px;border-radius:99px}
+.links a{margin-right:18px;font-family:var(--head);font-weight:500}
+.soon{opacity:.8;border-style:dashed}
+.timeline{border-left:2px solid var(--line);margin-left:6px;padding-left:26px;display:grid;gap:30px}
+.job{position:relative}
+.job::before{content:"";position:absolute;left:-33px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.job h3{font-size:1.15rem}
+.job .when{color:var(--muted);font-size:.92rem;margin:2px 0 8px}
+.job ul{margin:0;padding-left:18px}
+.job li{margin-bottom:5px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.skills h3{font-size:1.05rem;margin-bottom:10px}
+.skills p{margin:0;color:var(--muted)}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.contact{text-align:center}
+.contact p{max-width:30em;margin:0 auto 24px;color:var(--muted)}
+.contact .btns{justify-content:center}
+footer{padding:28px 0 36px;text-align:center;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.hero h1{animation:rise .8s ease both}
+.hero p{animation:rise .8s .15s ease both}
+.hero p.typed{animation-delay:.3s;margin-top:-8px;font-family:var(--head);color:var(--ink)}
+.hero .btns{animation:rise .8s .45s ease both}
+.hero .sheet{animation:rise .9s .25s ease both}
+@keyframes flagin{from{background:transparent;color:var(--ink);font-weight:500}to{background:var(--flag);color:var(--flag-ink);font-weight:700}}
+td.flag{animation:flagin .7s ease both;animation-delay:var(--d,1.3s)}
+tr:nth-child(3) td.flag{--d:1.9s}
+tr:nth-child(5) td.flag{--d:2.5s}
+.cursor{display:inline-block;width:2px;height:1.1em;background:var(--accent);margin-left:3px;vertical-align:-.15em;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+#type{color:var(--accent)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.card,.fact{transition:transform .25s ease,border-color .25s ease}
+.card:hover,.fact:hover{transform:translateY(-4px);border-color:var(--accent)}
+.btn{transition:transform .2s ease,border-color .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.bar{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:3px;width:0;background:var(--accent);z-index:20}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media (max-width:760px){
+  .hero,.about{grid-template-columns:1fr}
+  .hero{padding-top:20px}
+  body{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<div class="wrap">
+  <nav>
+    <a class="logo" href="#top">Vignesh Prabhuram</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="top">
+    <div>
+      <h1>I turn messy catalog data into clear decisions.</h1>
+      <p>Business analyst and catalog specialist with 4+ years in e-commerce. I find why product data goes wrong, measure it, and work with teams to fix it.</p>
+      <p class="typed">I analyze with <span id="type">SQL</span><span class="cursor" aria-hidden="true"></span></p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="sheet" role="img" aria-label="Sample table comparing retailer and seller product data, with mismatched values highlighted">
+      <div class="cap">Sample check: retailer data vs seller data</div>
+      <table>
+        <tr><th>Item</th><th>Field</th><th>1P value</th><th>3P value</th></tr>
+        <tr><td>ITM100231</td><td>Price</td><td>$42.50</td><td class="flag">$51.20</td></tr>
+        <tr><td>ITM100232</td><td>Brand</td><td>Nova</td><td class="flag">Kora</td></tr>
+        <tr><td>ITM100233</td><td>Color</td><td>Black</td><td>Black</td></tr>
+        <tr><td>ITM100234</td><td>Title</td><td>Urbanix Hoodie - Grey</td><td class="flag">URBANIX HOODIE GREY</td></tr>
+      </table>
+    </div>
+  </header>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <div class="about">
+      <div>
+        <p>I work where data quality meets business results. At Coforge, I own the item ID mismatch process for 1P and 3P marketplace models: I trace root causes, fix them, and support the wider team as an SME on high-priority escalations.</p>
+        <p>Before that, at Merkle, I built KPI trackers and dashboards in Excel and Power BI, kept delivery within SLA and turnaround targets, and worked directly with clients and cross-functional teams.</p>
+        <p>I’m now looking for Business Analyst, Catalog Specialist or Catalog Management roles where I can turn data and requirements into better processes and cleaner catalogs.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><b><span data-count="4">4</span>+ years</b><span>in e-commerce catalog and analytics work</span></div>
+        <div class="fact"><b>1P and 3P</b><span>marketplace models covered</span></div>
+        <div class="fact"><b>SQL, Power BI, Python</b><span>my everyday analysis tools</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="proj">
+      <article class="card">
+        <h3>Catalog Mismatch Checker</h3>
+        <p>A Python tool that compares retailer and seller product data and flags differences in title, brand, color and price. It exports an Excel report by mismatch type and category. On sample data (2,000 items), it found 403 items with at least one mismatch, so accuracy was 79.6%. Price errors averaged 13.5% off, and Apparel had the highest error rate at 23.1%.</p>
+        <ul class="tags"><li>Python</li><li>pandas</li><li>Excel</li><li>Root-cause analysis</li></ul>
+        <div class="links"><a href="https://github.com/Vignesh-Prabhuram/catalog-mismatch-checker">View on GitHub</a></div>
+      </article>
+      <article class="card">
+        <h3>Business Requirements Document: Catalog Quality Monitoring</h3>
+        <p>A BRD for a tool that monitors catalog accuracy. It covers the problem, goals and success metrics, stakeholders, functional requirements, user stories and a process flow. The target is to raise accuracy from 79.6% to 95% and cut manual QC time by half.</p>
+        <ul class="tags"><li>BRD</li><li>User stories</li><li>Stakeholders</li><li>Process flow</li></ul>
+        <div class="links"><a href="https://github.com/Vignesh-Prabhuram/catalog-mismatch-checker/blob/main/docs/BRD_catalog_quality_monitoring.md">Read the BRD</a></div>
+      </article>
+      <article class="card soon">
+        <h3>Catalog Quality Dashboard (in progress)</h3>
+        <p>A Power BI dashboard on the mismatch data, with accuracy, trends, and filters by category and mismatch type.</p>
+        <ul class="tags"><li>Power BI</li><li>KPI reporting</li></ul>
+      </article>
+    </div>
+    <p style="color:var(--muted);font-size:.9rem;margin-top:16px">The projects above use synthetic sample data, not company data.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="job">
+        <h3>Catalog Specialist / SME, Coforge</h3>
+        <div class="when">May 2025 to present</div>
+        <ul>
+          <li>Own the item ID mismatch process, with root-cause analysis and corrective actions across 1P and 3P models.</li>
+          <li>Handle high-priority data escalations and support the team as SME on the floor.</li>
+          <li>Run QA checks on titles, metadata, attributes and images before listings go live.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Research Analyst, Merkle</h3>
+        <div class="when">Jan 2024 to Apr 2025</div>
+        <ul>
+          <li>Worked with clients and cross-functional teams to deliver data-driven solutions on schedule.</li>
+          <li>Built dashboards, KPI trackers and management reports.</li>
+          <li>Kept delivery within SLA and turnaround time targets.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>E-commerce Analyst, Merkle</h3>
+        <div class="when">Jun 2022 to Dec 2023</div>
+        <ul>
+          <li>Managed catalog health, bulk SKU onboarding and multi-channel inventory sync.</li>
+          <li>Improved discoverability through taxonomy classification and listing optimization.</li>
+          <li>Built automated KPI trackers in Advanced Excel and Power BI.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><h3>Analysis and tools</h3><p>SQL, Advanced Excel, Power BI, Python, KPI reporting, data validation and cleansing</p></div>
+      <div class="card"><h3>Business analysis</h3><p>Root-cause analysis, requirements gathering, BRDs, user stories, stakeholder communication, process improvement</p></div>
+      <div class="card"><h3>E-commerce</h3><p>Catalog management, taxonomy, SKU onboarding, mismatch resolution, QA/QC, content moderation</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education and certifications</h2>
+    <div class="edu">
+      <div class="card"><h3>B.E. Mechanical Engineering</h3><p>Peri Institute of Technology (Anna University), 2017 to 2021</p></div>
+      <div class="card"><h3>Certifications</h3><p>Introduction to Data Analytics (IBM), Preparing Data for Analysis with Microsoft Excel (Microsoft), Python Programming (CSC)</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2 style="margin-bottom:14px">Let’s talk</h2>
+    <p>I’m open to Business Analyst and Catalog Specialist or Management roles. Send me a message or find me online.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:vigneshprabhuram17@gmail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/YOUR-USERNAME">LinkedIn</a>
+      <a class="btn" href="https://github.com/Vignesh-Prabhuram">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>Vignesh Prabhuram · Nagercoil, Kanniyakumari</footer>
+<script>
+(function(){
+var d=document.documentElement;
+var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!rm&&'IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){var t=e.target;t.classList.add('in');io.unobserve(t);
+      setTimeout(function(){t.classList.remove('reveal','in')},900);}
+  })},{threshold:.15});
+  document.querySelectorAll('.card,.fact,.job,.about>div,.sheet').forEach(function(e){
+    if(e.closest('.hero'))return;e.classList.add('reveal');io.observe(e);});
+  var n=document.querySelector('[data-count]');
+  if(n){var target=+n.getAttribute('data-count');
+    var co=new IntersectionObserver(function(es){if(es[0].isIntersecting){co.disconnect();
+      var v=0;n.textContent=0;var iv=setInterval(function(){v++;n.textContent=v;if(v>=target)clearInterval(iv);},300);}});
+    co.observe(n);}
+  var words=['SQL','Power BI','Python','Excel','root-cause analysis'];
+  var t=document.getElementById('type'),w=0,c=0,del=false;
+  (function tick(){var s=words[w];t.textContent=s.slice(0,c);var delay=del?45:90;
+    if(!del&&c===s.length){del=true;delay=1400;}
+    else if(del&&c===0){del=false;w=(w+1)%words.length;delay=300;}
+    else{c+=del?-1:1;}
+    setTimeout(tick,delay);})();
+}
+var bar=document.getElementById('bar');
+function sp(){var h=d.scrollHeight-window.innerHeight;bar.style.width=(h>0?window.scrollY/h*100:0)+'%';}
+window.addEventListener('scroll',sp,{passive:true});sp();
+})();
+</script>
+</body>
+</html>
